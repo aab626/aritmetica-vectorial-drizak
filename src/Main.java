@@ -1,4 +1,4 @@
-class Tarea0{
+class Main {
     public static void main(String[] args){
         // Creacion de vectores para pruebas
         ZeroVector v0 = new ZeroVector();
