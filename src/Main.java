@@ -38,10 +38,10 @@ class Main {
         System.out.println("Resultado: 0\n");
 
         System.out.println("2. " + "||" + v3a + "|| = " + v3a.getLength());
-        System.out.println("Resultado: 3.7416573867739413855837487323165\n");
+        System.out.println("Resultado: 3.7416573867739413\n");
 
         System.out.println("3. " + "||" + v2a + "|| = " + v2a.getLength());
-        System.out.println("Resultado: 2.2360679774997896964091736687313\n");
+        System.out.println("Resultado: 2.23606797749979\n");
 
         System.out.println(" ---------------------------------------- \n");
 
@@ -49,10 +49,10 @@ class Main {
         System.out.println("Sumas con vector cero:");
 
         System.out.println("1. " + v0 + " + " + v0 + " = " + v0.add(v0));
-        System.out.println("Resultado: " + new ZeroVector(5) + "\n");
+        System.out.println("Resultado: " + new VectorND(v0.components) + "\n");
 
         System.out.println("2. " + v2c + " + " + v0 + " = " + v2c.add(v0));
-        System.out.println("Resultado: " + v2c + "\n");
+        System.out.println("Resultado: " + new VectorND(v2c.components) + "\n");
 
         System.out.println("3. " + v0 + " + " + vnc + " = " + v0.add(vnc));
         System.out.println("Resultado: " + vnc + "\n");
@@ -88,7 +88,7 @@ class Main {
         System.out.println("Producto Punto:");
 
         System.out.println("1. " + v2a + " dot " + v3a + " = " + v2a.dotProduct(v3a));
-        System.out.println("Resultado: 5\n");
+        System.out.println("Resultado: 5.0\n");
 
         System.out.println("2. " + v1b + " dot " + vna + " = " + v1b.dotProduct(vna));
         System.out.println("Resultado: 9.6\n");
