@@ -1,19 +1,19 @@
 class Main {
     public static void main(String[] args){
         // Creacion de vectores para pruebas
-        ZeroVector v0 = new ZeroVector();
+        ZeroVector v0 = new ZeroVector(5);
 
         VectorND v1a = new VectorND(new double[] {0});
         VectorND v1b = new VectorND(new double[] {8});
 
-        Vector2 v2a = new Vector2(1,2);
-        Vector2 v2b = new Vector2(0,0);
-        Vector2 v2c = new Vector2(-5,13);
-        Vector2 v2d = new Vector2(5, -13);
+        Vector2D v2a = new Vector2D(1,2);
+        Vector2D v2b = new Vector2D(0,0);
+        Vector2D v2c = new Vector2D(-5,13);
+        Vector2D v2d = new Vector2D(5, -13);
 
-        Vector3 v3a = new Vector3(1,2,3);
-        Vector3 v3b = new Vector3(0,0,0);
-        Vector3 v3c = new Vector3(0,0,-2);
+        Vector3D v3a = new Vector3D(1,2,3);
+        Vector3D v3b = new Vector3D(0,0,0);
+        Vector3D v3c = new Vector3D(0,0,-2);
 
         VectorND vna = new VectorND(new double[] {1.2,44,5,0,0,0,0,1});
         VectorND vnb = new VectorND(new double[] {0,0,0,0,0});
@@ -49,7 +49,7 @@ class Main {
         System.out.println("Sumas con vector cero:");
 
         System.out.println("1. " + v0 + " + " + v0 + " = " + v0.add(v0));
-        System.out.println("Resultado: " + new ZeroVector() + "\n");
+        System.out.println("Resultado: " + new ZeroVector(5) + "\n");
 
         System.out.println("2. " + v2c + " + " + v0 + " = " + v2c.add(v0));
         System.out.println("Resultado: " + v2c + "\n");
@@ -97,13 +97,13 @@ class Main {
         System.out.println("Producto Cruz:");
 
         System.out.println("1. " + v3a + " x " + v3b + " = " + v3a.crossProduct(v3b));
-        System.out.println("Resultado: " + new Vector3(0,0,0) + "\n");
+        System.out.println("Resultado: " + new Vector3D(0,0,0) + "\n");
 
         System.out.println("2. " + v3a + " x " + v3c + " = " + v3a.crossProduct(v3c));
-        System.out.println("Resultado: " + new Vector3(-4,2,0) + "\n");
+        System.out.println("Resultado: " + new Vector3D(-4,2,0) + "\n");
 
         System.out.println("3. " + v3c + " x " + v3a + " = " + v3c.crossProduct(v3a));
-        System.out.println("Resultado: " + new Vector3(4,-2,0) + "\n");
+        System.out.println("Resultado: " + new Vector3D(4,-2,0) + "\n");
 
 
 

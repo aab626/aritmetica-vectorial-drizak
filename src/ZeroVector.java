@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
 class ZeroVector extends VectorND{
-    public ZeroVector(){
-        super(new double[] {});
+    public ZeroVector(int length){
+        super(new double[length]);
     }
 
     @Override

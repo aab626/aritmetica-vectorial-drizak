@@ -1,9 +1,9 @@
 import java.util.Arrays;
 
-class Vector2 extends VectorND{
+class Vector2D extends VectorND{
     public double x, y;
 
-    public Vector2(double x, double y){
+    public Vector2D(double x, double y){
         super(new double[] {x,y});
 
         this.x = x;

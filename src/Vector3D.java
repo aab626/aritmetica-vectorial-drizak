@@ -1,7 +1,7 @@
-class Vector3 extends VectorND{
+class Vector3D extends VectorND{
     public double x, y, z;
 
-    public Vector3(double x, double y, double z){
+    public Vector3D(double x, double y, double z){
         super(new double[] {x,y,z});
 
         this.x = x;
@@ -15,11 +15,11 @@ class Vector3 extends VectorND{
     }
 
     // Retorna un Vector3 segun el producto cruz entre dos Vector3
-    public Vector3 crossProduct(Vector3 otherVector){
+    public Vector3D crossProduct(Vector3D otherVector){
         double x = this.y*otherVector.z - this.z*otherVector.y;
         double y = this.z*otherVector.x - this.x*otherVector.z;
         double z = this.x*otherVector.y - this.y*otherVector.x;
 
-        return new Vector3(x,y,z);
+        return new Vector3D(x,y,z);
     }
 }
