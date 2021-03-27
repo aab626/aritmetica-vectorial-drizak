@@ -13,6 +13,6 @@ class Vector2D extends VectorND{
 
     @Override
     public String toString(){
-        return "Vector2(" + this.x + ", " + this.y + ")";
+        return "Vector2D(" + Arrays.toString(this.components) + ")";
     }
 }

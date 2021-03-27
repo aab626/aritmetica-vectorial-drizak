@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Vector3D extends VectorND{
     public double x, y, z;
 
@@ -11,7 +13,7 @@ class Vector3D extends VectorND{
 
     @Override
     public String toString(){
-        return "Vector3(" + this.x + ", " + this.y + ", " + this.z + ")";
+        return "Vector3D(" + Arrays.toString(this.components) + ")";
     }
 
     // Retorna un Vector3 segun el producto cruz entre dos Vector3

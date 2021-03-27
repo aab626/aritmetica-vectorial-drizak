@@ -6,6 +6,11 @@ class ZeroVector extends VectorND{
     }
 
     @Override
+    public String toString(){
+        return "ZeroVector(" + Arrays.toString(this.components) + ")";
+    }
+
+    @Override
     public VectorND add(VectorND otherVector){
         return new VectorND(otherVector.components);
     }
